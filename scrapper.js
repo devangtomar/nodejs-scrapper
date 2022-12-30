@@ -47,9 +47,9 @@ request(URL, function (error, response, html) {
         });
 
         fs.writeFile('movies.json', JSON.stringify(data), function (err) {
-            if (err) 
+            if (err)
                 throw err;
-            
+
             console.log('Data saved to file.');
         });
     }
